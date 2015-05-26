@@ -2,15 +2,17 @@
 
 A simple web app that retrieves recently tagged Instagram photos. Implemented with React, Flux and Express.
 
+![App screen shot](images/igg-ss.jpg?raw=true)
+
 ## Technology
 
-The front-end is built with [React](http://facebook.github.io/react/), Yahoo's isomorphic Flux implementation - [Fluxible](http://fluxible.io/), and Material Design. Client side routing is done with [Routr Plugin for Fluxible](https://github.com/yahoo/fluxible-plugin-routr). We're using [Gulp](http://gulpjs.com/) for the asset pipeline.
+The front-end is built with [React](http://facebook.github.io/react/), Yahoo's isomorphic Flux implementation - [Fluxible](http://fluxible.io/), and Material Design. Client side routing is done with [Routr Plugin for Fluxible](https://github.com/yahoo/fluxible-plugin-routr).
 
 Server side, Instagram Grid is built with the [Express](http://expressjs.com/) web framework.
 
 ## Live demo
 
-[http://instagram-grid.herokuapp.com/](http://instagram-grid.herokuapp.com/)
+[http://instagram-grid.herokuapp.com](http://instagram-grid.herokuapp.com)
 
 ## Install
 
