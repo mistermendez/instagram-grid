@@ -1,0 +1,68 @@
+body {
+  background-color: #e9eaed;
+  padding-top: @navbar-height;
+  .font-smooth(true);
+}
+.gray-bg {
+  background-color: #ececec;
+}
+ul.job-listing {
+  display: block;
+  text-align: left;
+  list-style-type: none;
+}
+.section {
+  h1 {
+    color: #4cddf3;
+    margin-bottom:30px;
+  }
+}
+.section.contact-blurb, .section.about-blurb {
+  min-height: 200px;
+}
+.padding15 {
+  padding: 15px;
+}
+.margin4 {
+  margin: 4px 0;
+}
+.margin-top-16 {
+  margin-top: 16px;
+}
+.row16{
+  margin-left:-16px;
+  margin-right:-16px;
+}
+.mui-paper > .mui-paper-container {
+  height: auto;
+}
+.mui-paper > .mui-paper-container.paper-style {
+  background-color: #FFF;
+  padding:16px;
+  margin: 16px 0;
+}
+.fb-blue {
+  background-color: @blue-600;
+  padding:16px;
+  margin: 16px 0;
+  a {
+    color: #FFF;
+    font-weight: bold;
+  }
+}
+
+/** widescreen and above **/
+@media (min-width: 1200px) {}
+
+/** desktop and below **/
+@media (max-width: 991px) {}
+
+/** tablet **/
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/** smartphone and below **/
+@media (max-width: 767px) {
+  .section.contact-blurb, .section.about-blurb {
+    min-height: 0;
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "name": "momentage-web",
+    "version": "0.0.1",
+    "dependencies": {
+        "bootstrap": "*"
+    },
+    "devDependencies": {
+
+    }
+}

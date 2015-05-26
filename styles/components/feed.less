@@ -1,0 +1,100 @@
+.feed-item {
+  border: 1px solid;
+  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+  margin: 16px 0;
+  min-height: 100px;
+  min-width: 100px;
+}
+
+.feed-user {
+  margin-bottom: 10px;
+  .feed-user-avatar {
+    display: table-cell;
+    vertical-align: top;
+    img {
+      width: 40px;
+      height: 40px;
+      border: 1px solid rgba(0, 0, 0, .1);
+    }
+  }
+  .feed-user-username {
+    color: @purple-800;
+    font-weight: bold;
+    padding-left: 6px;
+    display: table-cell;
+    vertical-align: top;
+  }
+}
+
+.feed-description {
+  margin-bottom: 10px;
+  .feed-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-right: 10px;
+  }
+}
+
+.feed-img {
+  .feed-like{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    color: @pink-A400;
+    font-size: 3.0em;
+  }
+}
+
+.feed-social {
+  margin-bottom: 10px;
+  .feed-social-item {
+    margin-right: 16px;
+  }
+  .feed-hash-tags {
+    span {
+      margin-right: 6px;
+      display: inline-block;
+      &:before {
+        content: "#";
+      }
+    }
+  }
+}
+
+.feed-action {
+  background-color: #F7F7F7;
+  ul {
+    margin: 0;
+    padding: 10px 16px;
+    list-style-type: none;
+    li {
+      display: inline;
+      margin-right: 16px;
+    }
+  }
+}
+.feed-loader{
+  width:50px;
+}
+
+
+
+/** smartphone and below **/
+@media (max-width: 767px) {
+  .feed.col-xs-4{
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .feed-item {
+    margin: 2px 0;
+  }
+  .feed-img {
+    img {
+    }
+    .feed-like{
+      bottom: 6px;
+      right: 6px;
+      font-size: 2.0em;
+    }
+  }
+}
