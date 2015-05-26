@@ -24,7 +24,7 @@ var FeedItem = React.createClass({
                             <a href={href}>
                                 <img className="img-responsive" src={this.props.feedItem.images.standard_resolution.url} />
                             </a>
-                            <a href="#" className="feed-like"><span className="glyphicon glyphicon-heart" aria-hidden="true"></span></a>
+                            <a href={href} className="feed-like"><span className="glyphicon glyphicon-heart" aria-hidden="true"></span></a>
                         </div>
                     </div>
                 </div>

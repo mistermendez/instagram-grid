@@ -20,7 +20,7 @@ var Featured = React.createClass({
 
     getState: function () {
         return {
-            featuredMoments: this.getStore(FeedStore).getFeedItems(),
+            featuredImages: this.getStore(FeedStore).getFeedItems(),
             nextPage: this.getStore(FeedStore).getNextPage(),
             feedDone: this.getStore(FeedStore).isFeedDone(),
             feedLoading: false
@@ -44,7 +44,7 @@ var Featured = React.createClass({
 
     // Render all feed components, passing state via props
     render: function() {
-        var allFeedItems = this.state.featuredMoments;
+        var allFeedItems = this.state.featuredImages;
         var feedItems = [];
 
         for (var key in allFeedItems) {
@@ -64,7 +64,7 @@ var Featured = React.createClass({
     },
 
     // add next set of images to feed
-    getNextMoments: function(page) {
+    getNextImages: function(page) {
         this.props.context.executeAction(addIGToFeed, {nextPage: page});
     },
 
@@ -84,7 +84,7 @@ var Featured = React.createClass({
             this.setState({feedLoading: true});
 
             // Get next page of images from IG
-            this.getNextMoments(this.state.nextPage);
+            this.getNextImages(this.state.nextPage);
 
         }
     }

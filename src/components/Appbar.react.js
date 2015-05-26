@@ -1,6 +1,5 @@
 var React = require('react'),
     mui = require('material-ui'),
-    MuNavbar = mui.Toolbar,
     LeftNav = mui.LeftNav,
     AppBar = mui.AppBar,
     MenuItem = mui.MenuItem;
@@ -27,7 +26,7 @@ var Navbar = React.createClass({
                 <div className="container-fluid header">
                     <button className="hamburger-button" onTouchTap={this._showLeftNavClick} type='button'>Show navigation</button>
                     <div className="header-title">
-                        Instagram Grid
+                        <a href="/">Instagram Grid</a>
                     </div>
                     <ul className="header-actions">
                         <li>

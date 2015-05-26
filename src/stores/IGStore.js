@@ -53,7 +53,7 @@ var IGStore = createStore({
     getState: function () {
         return {
             content: this._content,
-            featuredMoments: this._feedItems,
+            featuredImages: this._feedItems,
             nextPage: this._next_page,
             feedDone: this._feedDone,
             feedLoading: this._feedLoading
@@ -65,7 +65,7 @@ var IGStore = createStore({
 
     rehydrate: function (state) {
         this._content = state.content,
-            this._feedItems = state.featuredMoments,
+            this._feedItems = state.featuredImages,
             this._next_page = state.nextPage,
             this._feedDone = state.feedDone,
             this._feedLoading = state.feedLoading

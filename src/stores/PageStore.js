@@ -7,7 +7,7 @@ var PageStore = createStore({
         this.content = 'initial content...';
     },
     handleContentChange: function (payload) {
-        this.content = 'content for page with id '+payload.id;
+        this.content = 'Content for ' +payload.id+ ' page.';
         this.emitChange();
     },
     handlers: {
